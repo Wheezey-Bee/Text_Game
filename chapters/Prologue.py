@@ -19,10 +19,8 @@ def prologue(user,stats):
     res = input("Last chance to back out. \n[a] I'm in! \n[b] Like you said... It's now or never... \n[c] Actually, I'm out... \n")
     if res.lower() == 'a':
       print("I never had any doubts!")
-      #print("(These are your stats at the moment!: /n")
-      #print(stats["inventory"][:]) 
-      #print(stats.get("experience")) 
-     # print(stats.get("reputation"))
+      print("(These are your stats at the moment!: /n inventory: " +stats.get('inventory')+ "/n experience: " +stats.get('experience')+ "/n reputation: " +stats.get('reputation'))
+      print(stats)
       import chapters.chap_1
       return chapters.chap_1(user)
     elif res.lower() == 'b':

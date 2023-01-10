@@ -7,7 +7,7 @@ def chapter_1():
 def d1():
   res = input("So, what should we do first? \n[a] Search the house for supplies \n[b] Find a map and plan our route \n[c] Accept a quest in a questionable pub \n[d] Do some training in the forest \n")
   if res.lower() == 'a':
-    inventory = inventory.append('Axe', 'Canned Food', '10 Gold', 'Warm Blanket', 'Change of Clothes')
+    inventory.append('Axe', 'Canned Food', '10 Gold', 'Warm Blanket', 'Change of Clothes')
     print("New Items in Inventory! \n" + inventory)
     print("Great idea! I did bring some supplies but I'm not sure if they were enough for the two of us.")
     return d1_1() #create story choice ids/hidden list. Add id to list. If id in user list, you get a different outcome. If already done option, you cannot do it again.
