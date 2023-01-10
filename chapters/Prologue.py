@@ -11,6 +11,7 @@ def prologue(user,stats):
       return p_1()
     elif res.lower() == 'c':
       print("All right then. I'll try and catch up with you again soon. See you on the flip side!")
+      return p_1()
     else:
       err_message()
       return p_1()
@@ -19,15 +20,18 @@ def prologue(user,stats):
     res = input("Last chance to back out. \n[a] I'm in! \n[b] Like you said... It's now or never... \n[c] Actually, I'm out... \n")
     if res.lower() == 'a':
       print("I never had any doubts!")
-      print("(These are your stats at the moment!: /n inventory: " +str(stats.get('inventory'))+ "/n experience: " +str(stats.get('experience'))+ "/n reputation: " +str(stats.get('reputation')))
+      print("""(These are your stats at the moment!): 
+        inventory: """ +str(stats.get('inventory'))+ """
+        experience: """ +str(stats.get('experience'))+ """
+        reputation: """ +str(stats.get('reputation')))
       import chapters.chap_1
-      return chapters.chap_1(user)
+      return chapters.chap_1(user, stats)
     elif res.lower() == 'b':
       print("That's the spirit!")
       import chapters.chap_1
-      return chapters.chap_1(user)
-    elif res.lower == 'c':
-      print("Ha Ha.")
+      return chapters.chap_1(user, stats)
+    elif res.lower == 'c': #loop created - doesn't go to p3
+      print("Ha. Ha.")
       return p_3()
     else:
       err_message()
