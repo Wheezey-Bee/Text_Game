@@ -1,3 +1,3 @@
-Hello, this repository is for my chatbot text game. I started off with a framework from a coffee shop bot project on codecademy and adapted it to a typical quest storyline. I'm working on adding randomised features and introducing stats to the user which will also affect the story outcome. This will be a long project but once I get stats working, I'm sure the pace will pick up quickly! 
+Hello, this repository is for my chatbot text game. I started off with a framework from a coffee shop bot project on codecademy and adapted it to a typical quest storyline. I'm working on adding randomised features and introducing stats to the user which will also affect the story outcome. This will be a long project but now that I have got the beginning up and running, I am sharing it on here!
 
 Thanks for having a look!
