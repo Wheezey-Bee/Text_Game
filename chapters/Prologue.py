@@ -24,8 +24,9 @@ def prologue(user,stats):
         inventory: """ +str(stats.get('inventory'))+ """
         experience: """ +str(stats.get('experience'))+ """
         reputation: """ +str(stats.get('reputation')))
-      import chapters.chap_1
-      return chapters.chap_1(user, stats)
+      from chap_1 import chapter_1 #error occurs here 
+      return chapter_1(user, stats)
+
     elif res.lower() == 'b':
       print("That's the spirit!")
       import chapters.chap_1
@@ -44,7 +45,7 @@ def prologue(user,stats):
     elif res.lower == 'b':
       print("Had me going there for a sec!")
       import chapters.chap_1
-      return chapters.chap_1(user)
+      return chapters.chap_1(user, stats)
     else:
       err_message()
       return p_3
