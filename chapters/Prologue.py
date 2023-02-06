@@ -54,4 +54,4 @@ def prologue(user,stats):
     print("Sorry, could you repeat that?")
     print("(Please press the corresponding key to your choice of dialogue)")
 
-  p_1()
+  p_1();
